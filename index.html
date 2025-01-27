@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Document Vault</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .vault-container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+    }
+    .vault-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .vault-header h1 {
+      font-size: 1.8em;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    input[type="file"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .message {
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #d32f2f;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="vault-container">
+    <div class="vault-header">
+      <h1>Secure Document Vault</h1>
+    </div>
+    <form id="vaultForm">
+      <div class="form-group">
+        <label for="document">Select Document:</label>
+        <input type="file" id="document" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit">Secure Document</button>
+    </form>
+    <div id="message" class="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
